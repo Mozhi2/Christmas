@@ -1,0 +1,368 @@
+:root{
+    font-size: 16px;
+    --fonts: Montserrat, sans-serif;
+    --light-gray: #eaeaea;
+    --med-gray: #555;
+    --white: #fff;
+    --black: #000000;
+  /*  color palette from: https://color.adobe.com/Colliding-Power-color-theme-7210405/ */
+    --dune: #363432;
+    --blumine: #196774;
+    --purple: #800080;
+    --yellow: #ffef00;
+    --pewter: #90A19D;
+    --carrot-orange: #F0941F;
+    --flamingo: #EF6024;
+    --box-shadow: -0.5rem 0.5rem 1rem var(--med-gray); 
+    --small-shadow: -0.25rem 0.25rem 0.5rem var(--med-gray);
+    --filter-shadow: drop-shadow(-0.5rem 0.5rem 0.5rem var(--med-gray));
+  }
+  
+  /* ----- SKIP LINK STYLES ----- */
+  /* skip link styles from: https://webaim.org/techniques/css/invisiblecontent/ */
+  #skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+   
+  #skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  body{
+    font-family: var(--fonts);
+    color: var(--dune);
+    line-height: 1.35;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+   transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.light-mode {
+      background-color: #ffffff;
+      color: #000000;
+  }
+  
+  body.dark-mode {
+      background-color: #000000;
+      color: #ffffff;
+  }
+  
+  
+  .dark-mode header, .dark-mode footer{
+      background-color: #444444;
+  }
+  .dark-mode nav a{
+     background-color: #1a1a1a;
+   
+  }
+  
+  .dark-mode #holidays a{
+    text-decoration: none;
+    color: var(--yellow);
+  }
+  
+  .dark-mode #products, #game{
+    background-color: var(--black);
+   border: 2px solid #ccc;
+   border-color: var(--med-gray);
+  }
+  
+  .dark-mode #game{
+    background-color: var(--black);
+  }
+  
+  #holidays{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1.5rem;
+     justify-content: center;
+    align-items: center;
+  }
+  #holidays p{
+    line-height: 2rem;
+    margin-right: 1.25rem;
+    text-align: justify;
+  }
+  
+  #candle{
+     margin: 2.5rem;
+   justify-content: center;
+    align-items: center;
+  }
+  
+  #products {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   padding-top: 0.5rem;
+  }
+  #game{
+      background-color: var(--white);
+  
+  }
+  #products{
+    background-color: var(--light-gray);
+  }
+  #game, #guess{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #game input{
+    width: 80%;
+  }
+  #submit-guess{
+    align-items: center;
+   text-decoration:none;
+    text-align: center;
+    padding: 0.5rem;
+    margin-left: 1.3rem;
+    background-color: var(--white);
+    color: var(--purple);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 75%;
+  }
+  
+  
+  #contact h2{
+    text-align: left;
+  }
+  header{
+    background-color: var(--blumine);
+    color: var(--white);
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    align-items: center;
+  
+  }
+  .logo{
+    padding: 0.5rem;
+  }
+  
+  header div{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header svg{
+    fill: var(--white);
+    width: 100%;
+    max-width: 125px;
+    margin-left: 3.5rem;
+   
+  }
+  
+  h1{
+    font-weight: bold;
+    font-size: 2.25rem;
+    font-style: italic;
+    margin-right: 0.5rem;
+   
+    }
+  
+  h2{
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  nav{
+    margin-left: 5rem;
+  }
+  
+  nav a{
+    text-decoration:none;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--white);
+    color: var(--carrot-orange);
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+  }
+  
+  .mode{
+    width: 30%;
+    margin-left: 3rem;
+  }
+  
+  
+  /* ----- LINK STYLES ----- */
+  
+  
+  nav li {
+    list-style:none;
+  }
+  
+  /* ----- LINK STYLES ----- */
+  
+  a{
+    display: block;
+    padding: 0.25rem;
+  }
+  
+  #contact-form, #names, #nums, #message{
+    display: grid;
+    text-align: left;
+   }
+  
+  #prev-product, #next-product{
+    text-decoration:none;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.7rem 0;
+    background-color: var(--white);
+    color: var(--purple);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+  }
+  
+  h2{
+    text-align: center;
+  }
+  input, textarea {
+      margin: 10px 0;
+      padding: 10px;
+      width: 50%;
+  }
+   #contact{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  #product-display {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  
+  .product-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+  }
+  
+  #cart-items {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  #cart-items li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  #cart-items img {
+      margin-right: 10px;
+      width: 50px;
+      height: 50px;
+  }
+  
+  #cart-total {
+      margin-top: 20px;
+      font-weight: bold;
+  }
+  
+  #santa{
+  margin: 6rem auto;
+  }
+  #submit{
+    width: 25%;
+    margin-left: 5rem;
+    text-decoration:none;
+    text-align: center;
+    padding: 0.5rem;
+     background-color: var(--white);
+    color: var(--purple);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+  }
+  
+  
+  /* main section{
+    margin: 1rem auto;
+  } */
+  
+  
+  section#pic img{
+    display: block;
+    margin: 0 auto;
+   }
+  
+  section#pic{
+   background-color: #1a0900;
+  }
+  
+  footer{
+    background-color: var(--blumine);
+    text-align: center;
+    color: var(--white);
+    padding: 2rem 1rem 1rem 1rem;
+    line-height: 2;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  /* ----- HOVER STYLES ----- */
+  @media (hover:hover){
+     nav a:hover{
+      background-color: var(--carrot-orange);
+      color: var(--white);
+    }
+    #prev-product:hover, #next-product:hover, #submit-guess:hover, #submit:hover{
+      background-color: var(--purple);
+      color: var(--white);
+    }
+    
+   
+  
+    
+    .dark-mode #prev-product:hover{
+    background-color: var(--purple);
+      color: var(--white);
+  }
+    
+    .dark-mode #prev-product:hover{
+   background-color: var(--purple);
+      color: var(--white);
+  }
+   
+    footer a:hover{
+      color: var(--carrot-orange);
+    }
+    
+   
+  }
+  
+  
+  
