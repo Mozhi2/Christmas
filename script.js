@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
             description: "Christmas tree with ornaments." 
         },
     ];
-// Begin Card Section
+
     // Cart array to hold added products
     let cart = [];
 
