@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
         { 
             name: "Product 1", 
             image: "https://live.staticflickr.com/65535/53413304649_475910cb42_b.jpg",
-            description: "Happy Holidays frame photo with three snowmen, red flowers, and a window behind the scene with 5 birds that have hats and scarves." 
+            description: "Happy Holidays frame photo with three snowmen, red flowers." 
         },
         { 
             name: "Product 2", 
             image: "https://live.staticflickr.com/65535/53392691246_752b9ff7a4_b.jpg", 
-            description: "Santa photo frame." 
+            description: "Santa photo frame with flag of Merry Christmas at the left side." 
         },
         { 
             name: "Product 3", 
