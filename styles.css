@@ -405,8 +405,10 @@ footer {
     padding: 20px;
 }
 
-#contact{
+#contact, #submit{
     display: grid;
+    justify-content: center;
+
 }
 
 }
