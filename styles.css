@@ -164,11 +164,11 @@
   
   
   /* ----- LINK STYLES ----- */
-  
+  /*
   nav{
     margin-left: 5rem;
   }
-  
+  */
   nav a{
     text-decoration:none;
     text-align: center;
@@ -193,9 +193,7 @@
  
   /*Penguin Pic STYLE */
 
-  #pic{
-    background-color: #1a0900;
-   }
+ 
 
 
   #pic img{
@@ -207,7 +205,7 @@
   
  
   /* Holidays section */
-  
+  /*
   #holidays{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -215,6 +213,7 @@
      justify-content: center;
     align-items: center;
   }
+    */
   #holidays p{
     line-height: 2rem;
     margin-right: 1.25rem;
@@ -547,6 +546,15 @@ footer {
 
 
 }
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+
 
 
   
