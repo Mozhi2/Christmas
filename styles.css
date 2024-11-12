@@ -344,9 +344,7 @@
       color: var(--white);
     }
     
-   
-  
-    
+     
     .dark-mode #prev-product:hover{
     background-color: var(--purple);
       color: var(--white);
@@ -363,6 +361,94 @@
     
    
   }
+
+  /* Mobile View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+/* Main content styles */
+main {
+    margin-top: 30px;
+}
+
+/* Section style */
+section {
+    margin-bottom: 30px;
+}
+
+/* Flex for smaller screens */
+section .product, section .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section .product div, section .contact div {
+    flex: 1;
+    min-width: 200px;
+}
+
+header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav {
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Main content styles */
+main {
+margin-top: 30px;
+}
+
+/* Section style */
+section {
+margin-bottom: 30px;
+}
+
+/* Flex for smaller screens */
+section .product, section .contact {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+section .product div, section .contact div {
+flex: 1;
+min-width: 200px;
+}
+
+/* Footer styles */
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px;
+}
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+}
   
   
   
