@@ -470,6 +470,61 @@ section #product div{
     gap: 20px;
     align-items: center;
 }
+
+
+#names label {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#names input {
+    width: 70%;
+}
+
+
+
+#nums label {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#nums{
+    width: 100%;
+}
+
+
+
+.radio-label {
+    font-weight: normal;
+    display: flex;
+    margin: 10px;
+
+}
+
+
+input{
+    display: grid;
+    align-items: center;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+
+#nums label {
+    display: flex;
+    margin-top: 8px;
+}
+
+#submit {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+
 /* Footer styles */
 footer {
     background-color: #333;
