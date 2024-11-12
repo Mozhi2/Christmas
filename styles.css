@@ -386,13 +386,13 @@ section {
 }
 
 /* Flex for smaller screens */
-section .product, section .contact {
+section #products, section #contact {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-section .product div, section .contact div {
+section #product div, section #contact div {
     flex: 1;
     min-width: 200px;
 }
@@ -405,11 +405,7 @@ footer {
     padding: 20px;
 }
 
-#contact, #submit{
-    display: grid;
-    justify-content: center;
 
-}
 
 }
 
