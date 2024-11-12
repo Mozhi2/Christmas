@@ -121,7 +121,7 @@
     padding: 1rem;
     width: calc(100% - 2rem);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5rem;
     align-items: center;
   
@@ -352,8 +352,6 @@
     text-decoration:none;
     text-align: center;
     padding: 0.5rem;
-     background-color: var(--white);
-    color: var(--purple);
     font-size: 1rem;
     font-weight: bold;
     border-radius: 0.5rem;
@@ -412,7 +410,7 @@
     header {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding: 20px;
+        
     }
 
     h1{
@@ -420,18 +418,27 @@
     }
 
     .logo{
-        width: 5%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
     }
 
-    nav {
-        display: grid;
-        gap: 0.5rem;
+    nav a{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -20px;
+        text-decoration: none;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 0.25rem;
     }
 
     .mode{
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        width: 100%;
     }
 
 
@@ -469,7 +476,7 @@ section #product div{
     min-width: 200px;
 }
 
-#contact, #contact-form{
+#contact{
     display: grid;
     gap: 20px;
     align-items: center;
@@ -519,11 +526,9 @@ input{
     margin-top: 8px;
 }
 
-#submit {
+#submit{
     margin-top: 20px;
     padding: 20px;
-    background-color: var(--purple);
-    color: var(--white);
     font-size: 20px;
     align-items: center;
     text-align: center;
@@ -531,8 +536,6 @@ input{
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
     padding: 20px;
 }
@@ -542,16 +545,6 @@ footer {
 }
 
 
-/* Desktop View */
-@media screen and (min-width: 1024px) {
-    header {
-        flex-direction: row;
-    }
-
-    nav {
-        flex-direction: row;
-    }
-}
   
   
   
