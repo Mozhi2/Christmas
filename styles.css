@@ -67,10 +67,6 @@
     padding: 0;
   }
 
-     main section{
-    margin: 1rem auto;
-  } 
-  
 
   /* Light/Drak mode SVG */
 
@@ -197,13 +193,17 @@
  
   /*Penguin Pic STYLE */
 
-  section#pic{
+  #pic{
     background-color: #1a0900;
    }
-  section#pic img{
+
+
+  #pic img{
     display: block;
     margin: 0 auto;
-   }
+    width: 80%;
+     height: 60%;  
+ }
   
  
   /* Holidays section */
@@ -415,14 +415,23 @@
         
     }
 
+    h1{
+        font-size: 1.5rem;
+    }
+
     .logo{
-        width: 100%;
-        height: 100%;
+        width: 5%;
+        height: 50%;
     }
 
     nav {
         display: grid;
         gap: 0.5rem;
+    }
+
+    .mode{
+        height: 50%;
+        width: 50%;
     }
 
 
@@ -437,8 +446,7 @@ section {
 }
 
 #pic img{
- height: auto;
- width: auto;
+ width: 100%;
 }
 
 #holidays{
@@ -457,11 +465,11 @@ section #product div{
     min-width: 200px;
 }
 
-#contact{
+#contact, #contact-form{
     display: grid;
+    gap: 20px;
     align-items: center;
 }
-
 /* Footer styles */
 footer {
     background-color: #333;
