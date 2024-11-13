@@ -572,13 +572,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    .product-card{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 200px;
-        text-align: center;
-        margin: 2rem
-    }
+ 
 
     #contact{
         display: grid;
