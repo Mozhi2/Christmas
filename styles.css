@@ -216,7 +216,7 @@
     */
   #holidays p{
     line-height: 2rem;
-    margin-right: 1.25rem;
+    margin: 0 auto;
     text-align: justify;
   }
   
@@ -233,6 +233,12 @@
     text-align: center;
    padding-top: 0.5rem;
    background-color: var(--light-gray);
+  }
+
+  #product-display{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
 /* Game Section */
@@ -417,9 +423,9 @@
     }
 
     .logo{
-        width: 100%;
-        height: 100%;
-        margin-right: 2rem;
+        width: 70%;
+        height: 70%;
+        align-items: left;
     }
 
     nav a{
@@ -438,8 +444,8 @@
     }
 
     .mode{
-        height: 100%;
-        width: 100%;
+        height: 70%;
+        width: 70%;
     }
 
 
@@ -463,8 +469,12 @@ section {
     
 }
 
+#holidays p{
+    margin: 0 auto;
+}
+
 #candle img{
-width: 100%;
+width: 60%;
 }
 
 /* Flex for smaller screens */
@@ -472,7 +482,19 @@ width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   padding-top: 0.5rem;
+   background-color: var(--light-gray);
 }
+
+
+  #product-display{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
 section #product div{
     flex: 1;
@@ -486,6 +508,7 @@ section #product div{
 }
 
 
+
 #names label {
     font-weight: bold;
     font-size: 17px;
@@ -495,6 +518,9 @@ section #product div{
     width: 70%;
 }
 
+#game input{
+    width: 100%;
+}
 
 
 #nums label {
@@ -515,7 +541,7 @@ section #product div{
 
 }
 
-
+/*
 input{
     display: grid;
     align-items: center;
@@ -523,7 +549,7 @@ input{
     align-items: center;
 
 }
-
+*/
 #nums label {
     display: flex;
     margin-top: 8px;
