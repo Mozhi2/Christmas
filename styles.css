@@ -323,6 +323,7 @@
       padding: 10px;
       width: 200px;
       text-align: center;
+      margin: 2rem
   }
   
   #cart-items {
@@ -470,9 +471,7 @@ main {
     margin: 0 auto;
 }
 
-#candle img{
-width: 60%;
-}
+
 
 /* Flex for smaller screens */
 #product{
@@ -573,11 +572,19 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-
+    .product-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 200px;
+        text-align: center;
+        margin: 2rem
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    
+    #holidays p{
+padding: 1.5rem;
+    }
 }
 
 
