@@ -117,7 +117,6 @@
   header{
     background-color: var(--blumine);
     color: var(--white);
-    width: calc(100% - 2rem);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5rem;
@@ -258,7 +257,7 @@
 
   #submit-guess{
     align-items: center;
-   text-decoration:none;
+    text-decoration:none;
     text-align: center;
     padding: 0.5rem;
     margin-left: 1.3rem;
@@ -282,7 +281,7 @@
   }
  
    
- #contact-form, #names, #nums, #message{
+ #contact-form, #names, #message{
     display: grid;
     text-align: left;
    }
@@ -350,11 +349,14 @@
   
   
   #submit{
-    width: 100%;
+    padding: 0.5rem;
+    margin-left: 1.3rem;
+    background-color: var(--white);
+    color: var(--purple);
+    width: 75%;
     margin-left: 5rem;
     text-decoration:none;
     text-align: center;
-    padding: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 0.5rem;
@@ -454,9 +456,6 @@ main {
 */
 
 /* Section style */
-section {
-    margin-bottom: 30px;
-}
 
 #pic img{
  width: 100%;
@@ -528,6 +527,7 @@ section #product div{
 }
 
 #nums{
+    display: grid;
     width: 100%;
 }
 
@@ -555,10 +555,10 @@ input{
 }
 
 #submit{
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 1rem;
+    margin-left: 0.25rem;
+    padding: 1rem;
     font-size: 20px;
-    align-items: center;
     text-align: center;
 }
 
