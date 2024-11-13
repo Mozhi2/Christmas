@@ -569,11 +569,13 @@ footer {
 
 
 
+
+
 }
 
 @media screen and (min-width: 768px) {
  
-
+    
     #contact{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -586,6 +588,14 @@ footer {
     #holidays img{
         width: 50%;
     }
+    .product-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+        margin: 2rem
+    }
+
 
    
 }
@@ -598,6 +608,16 @@ padding: 1.5rem;
     #contact{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+        margin: 2rem
     }
 }
 
