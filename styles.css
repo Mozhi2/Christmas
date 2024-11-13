@@ -431,7 +431,6 @@
 
     nav a{
         margin-top: 40px;
-        display: flex;
         justify-content: space-between;
         margin-top: -20px;
         text-decoration: none;
@@ -444,10 +443,6 @@
         border-radius: 0.25rem;
     }
 
-    .mode{
-        height: 70%;
-        width: 70%;
-    }
 
 
 /* Main content styles 
@@ -465,10 +460,6 @@ main {
 #holidays{
     display: grid;
     
-}
-
-#holidays p{
-    margin: 0 auto;
 }
 
 
@@ -497,6 +488,13 @@ section #product div{
     min-width: 200px;
 }
 
+.product-card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    margin: 2rem
+}
 #contact{
     display: flex;
     flex-direction: column;
@@ -559,6 +557,8 @@ input{
     padding: 1rem;
     font-size: 20px;
     text-align: center;
+    align-items: center;
+    
 }
 
 /* Footer styles */
@@ -572,18 +572,38 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    .product-card {
+    .product-card{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 200px;
         text-align: center;
         margin: 2rem
     }
+
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #holidays p{
+        margin: 1rem;
+    }
+
+    #holidays img{
+        width: 50%;
+    }
+
+   
 }
 
 @media screen and (min-width: 1200px) {
     #holidays p{
 padding: 1.5rem;
+    }
+
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
