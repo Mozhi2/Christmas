@@ -72,8 +72,7 @@
 
   .mode{
     width: 30%;
-    margin-left: 3rem;
-  }
+    }
   
 /* light mode setting */
   
@@ -138,7 +137,6 @@
     fill: var(--white);
     width: 100%;
     max-width: 125px;
-    margin-left: 3.5rem;
    
   }
 
