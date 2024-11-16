@@ -424,8 +424,7 @@
     }
 
     .logo{
-        width: 70%;
-        height: 70%;
+       
         align-items: left;
     }
 
@@ -576,6 +575,19 @@ footer {
 @media screen and (min-width: 768px) {
  
     
+
+    #names {
+        display: grid;
+
+    }
+
+    #names input {
+        width: 100%;
+    }
+
+    #nums {
+        display: grid;
+    }
     #contact{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -588,16 +600,15 @@ footer {
     #holidays img{
         width: 50%;
     }
-    .product-card {
-        border: 1px solid #ccc;
-        padding: 10px;
-        width: 250px;
-        text-align: center;
-        margin: 2rem
+
+    #names, #nums, textarea, #submit{
+        width: 70%;
     }
-
-
-   
+#santa img{
+    width: 70%;
+}
+    
+      
 }
 
 @media screen and (min-width: 1200px) {
@@ -609,8 +620,22 @@ padding: 1.5rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    input{
+        width: 50%;
+    }
 
-    .product-card {
+    .mode{
+        align-items: right;
+        justify-content: right;
+    }
+
+    #nums {
+        display: flex;
+        flex-direction: column;
+
+    }
+/*
+    .product-card{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         border: 1px solid #ccc;
@@ -618,6 +643,12 @@ padding: 1.5rem;
         width: 250px;
         text-align: center;
         margin: 2rem
+    }
+        */
+    #submit{
+        width: 50%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
