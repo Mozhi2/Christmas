@@ -135,6 +135,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
             document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod1}.`;
         this.reset();
         }
+    
 });
 
 
