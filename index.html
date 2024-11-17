@@ -284,6 +284,21 @@
             <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Phone Number" required>
           </div>
 
+          <label for="prefEmail">
+            <span class="radio-input">
+                <input type="radio" name="contactPref" id="prefEmail" required>
+                <span class="radio-control"></span>
+            </span>
+            <span class="radio-label">Phone</span>
+        </label>
+        <label for="prefText">
+            <span class="radio-input">
+                <input type="radio" name="contactPref" id="prefText">
+                <span class="radio-control"></span>
+            </span>
+            <span class="radio-label">Email</span>
+        </label>
+<!--
           <label>Preferred Method of Conrtact<span class="required">*</span></label>
           <label>
             <input type="radio" name="contact-method" value="phone" required> Phone
@@ -291,7 +306,7 @@
           <label>
             <input type="radio" name="contact-method" value="email" required> Email
           </label>
-
+        -->
           <div id="comment">
             <label for="email">Your Message:</label>
             <textarea id="message" placeholder="message" col=120 rows=5 required></textarea>

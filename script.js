@@ -108,8 +108,8 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     const phone = document.getElementById("phone").value;
     const email = document.getElementById("email").value;
     const comments = document.getElementById("message").value;
-    const contactMethod = document.querySelector('input[name="contact-method"]:checked').value;
-
+    const contactMethod = document.getElementById("prefEmail").value;
+    const contactMethod1 = document.getElementById("prefPhone").value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\d{10}$/;
 
@@ -126,10 +126,15 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         return;
     }
 
-    const customerInfo = { name, phone, email, comments, contactMethod};
-        
+    const customerInfo = { name, phone, email, comments, contactMethod, contactMethod1};
+        if(document.getElementById("form-message").innerText = contactMethod)
+        {
         document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod}.`;
+        this.reset();}
+        else{
+            document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod1}.`;
         this.reset();
+        }
 });
 
 
