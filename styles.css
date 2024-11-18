@@ -538,10 +538,16 @@ main {
         font-size: 17px;
     }
 
-    #names input {
+    #names input{
         width: 100%;
         padding: 0.5rem;
     }
+
+    #nums input{
+        width: 100%;
+        padding: 0.5rem;
+    }
+
 
     #game input {
         width: 100%;
@@ -556,8 +562,7 @@ main {
     #nums {
         display: grid;
         width: 100%;
-        padding: 0.5rem;
-    }
+     }
 
 
 
