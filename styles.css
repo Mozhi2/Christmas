@@ -305,6 +305,10 @@ textarea {
     width: 100%;
 }
 */
+
+#prefPhone, #prefEmail{
+    display: grid;
+}
 #santa {
     margin: 6rem auto;
 }
