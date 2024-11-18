@@ -108,8 +108,8 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     const phone = document.getElementById("phone").value;
     const email = document.getElementById("email").value;
     const comments = document.getElementById("message").value;
-    const contactMethod = document.getElementById("prefEmail").value;
-    const contactMethod1 = document.getElementById("prefPhone").value;
+    const contactMethod = document.getElementById("prefPhone").value;
+    const contactMethod1 = document.getElementById("prefEmail").value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\d{10}$/;
 
