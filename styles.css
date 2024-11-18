@@ -668,6 +668,11 @@ input{
        text-align: center;
        align-items: center;
     }
+
+    #product-display{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 1200px) {
