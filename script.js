@@ -127,7 +127,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     }
 
     const customerInfo = { name, phone, email, comments, contactMethod, contactMethod1};
-        if(document.getElementById("form-message").innerText = contactMethod)
+        if(document.getElementById("form-message").innerText == contactMethod)
         {
         document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod}.`;
         this.reset();}
