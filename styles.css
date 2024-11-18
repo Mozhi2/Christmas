@@ -669,10 +669,7 @@ input{
        align-items: center;
     }
 
-    #product-display{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -690,7 +687,7 @@ input{
         padding: 0.5rem;
     }
 
-    a#modeToggle {
+    header svg {
         align-items: right;
         justify-content: right;
     }
@@ -705,6 +702,8 @@ input{
         align-items: center;
 
     }
+
+    
 
      #submit {
         width: 50%;
