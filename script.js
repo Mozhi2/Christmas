@@ -127,17 +127,15 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     }
 
     const customerInfo = { name, phone, email, comments, contactMethod, contactMethod1};
-        if(document.getElementById("form-message").innerText == contactMethod)
-        {
+       
         document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod}.`;
-        this.reset();}
-        else{
+        this.reset();
+        
             document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod1}.`;
         this.reset();
-        }
+        
     
-});
-
+    });
 
 document.getElementById('modeToggle').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the default anchor behavior
