@@ -449,6 +449,10 @@ footer a {
         align-items: left;
     }
 
+    a#modeToggle{
+        width: 100%;
+    }
+
     nav a {
         margin-top: 40px;
         justify-content: space-between;
@@ -480,6 +484,9 @@ main {
     #holidays {
         display: grid;
 
+    }
+    #holidays p{
+        margin: 1rem;
     }
 
 
@@ -513,6 +520,7 @@ main {
         flex-direction: column;
         width: 200px;
         text-align: center;
+        align-items: center;
         margin: 2rem
     }
 
@@ -665,6 +673,10 @@ input{
     .mode {
         align-items: right;
         justify-content: right;
+    }
+
+    #santa img {
+        width: 100%;
     }
 
     #nums {
