@@ -543,11 +543,7 @@ main {
     }
 
 
-    #contact-form{
-        text-align: center;
-        display: grid;
-        margin-right: 1rem;
-    }
+   
     #names label {
         font-weight: bold;
         font-size: 17px;
@@ -581,10 +577,12 @@ main {
 
 
 
-    .radio-label {
+    .radio-label{
         font-weight: normal;
         margin: 10px;
-
+        text-align: center;
+        display: grid;
+        margin-right: 1rem;
     }
 
     /*
