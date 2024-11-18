@@ -288,12 +288,13 @@ a {
 }
 
 
-#contact-form,
+
 #names,
 #message {
     display: grid;
     text-align: left;
 }
+
 
 #names input{
     width: 70%;
@@ -542,7 +543,11 @@ main {
     }
 
 
-
+    #contact-form{
+        text-align: center;
+        display: grid;
+        margin-right: 1rem;
+    }
     #names label {
         font-weight: bold;
         font-size: 17px;
