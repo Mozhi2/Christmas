@@ -680,8 +680,8 @@ input{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    input {
-        width: 100%;
+    input{
+        width: 70%;
         padding: 0.5rem;
     }
 
@@ -694,11 +694,6 @@ input{
         width: 100%;
     }
 
-    #nums {
-        display: flex;
-        flex-direction: column;
-
-    }
 
     .product-card {
         text-align: center;
