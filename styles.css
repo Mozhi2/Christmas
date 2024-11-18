@@ -267,6 +267,7 @@ a {
     text-align: center;
     padding: 0.5rem;
     margin-left: 1.3rem;
+    margin-top: 1rem;
     background-color: var(--white);
     color: var(--purple);
     font-size: 1rem;
@@ -531,6 +532,7 @@ main {
 
     #names input {
         width: 100%;
+        padding: 0.5rem;
     }
 
     #game input {
@@ -546,6 +548,7 @@ main {
     #nums {
         display: grid;
         width: 100%;
+        padding: 0.5rem;
     }
 
 
@@ -600,8 +603,9 @@ input{
 
     }
 
-    #names input {
+    #names input, #nums input{
         width: 100%;
+        padding: 0.5rem;
     }
 
     #nums {
@@ -639,6 +643,7 @@ input{
 
     .product-card {
        text-align: center;
+       align-items: center;
     }
 }
 
@@ -670,6 +675,7 @@ input{
 
     .product-card {
         text-align: center;
+        align-items: center;
 
     }
 
