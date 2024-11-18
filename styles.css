@@ -306,10 +306,20 @@ textarea {
     width: 100%;
 }
 */
-
+.radio-input {
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: flex;
+    flex-flow: wrap;
+    gap: 0.5em;
+}
+/*
 #prefPhone, #prefEmail{
     display: grid;
 }
+    */
 #santa {
     margin: 6rem auto;
 }
@@ -486,7 +496,7 @@ main {
 
     }
     #holidays p{
-        margin: 1rem;
+        margin: 1.5rem;
     }
 
 
@@ -675,7 +685,7 @@ input{
         padding: 0.5rem;
     }
 
-    .mode {
+    a#modeToggle {
         align-items: right;
         justify-content: right;
     }
