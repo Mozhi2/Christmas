@@ -295,10 +295,6 @@ a {
     text-align: left;
 }
 
-#message{
-    width: 80%;
-}
-
 
 #names input{
     width: 70%;
@@ -462,7 +458,7 @@ footer a {
     .logo{
         align-items:left;
     }
-*/
+
     a#modeToggle{
         width: 100%;
     }
@@ -578,13 +574,11 @@ main {
         width: 100%;
      }
 
-#comment label{
-    margin-bottom: 0.5rem;
-}
+
 
     .radio-label{
         font-weight: normal;
-        margin-top: 1.25rem;
+        margin: 10px;
         text-align: center;
         display: grid;
         margin-right: 1rem;
@@ -641,8 +635,6 @@ input{
 
     #nums {
         display: grid;
-        justify-content: start;
-        margin-left: 2rem;
     }
 
     #contact {
@@ -693,7 +685,7 @@ input{
     }
 
     input{
-       
+        width: 70%;
         padding: 0.5rem;
     }
 
