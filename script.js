@@ -1,9 +1,10 @@
 "use strict";
 const body = document.body;
 const products = [
-    { id: 1, name: 'Product 1', price: 20.00, image: 'product1.jpg' },
-    { id: 2, name: 'Product 2', price: 30.00, image: 'product2.jpg' },
-    // Add more products as needed
+    { id: 1, name: 'Product 1', price: 20.00, image: 'https://live.staticflickr.com/65535/53413304649_475910cb42_b.jpg'},
+    { id: 2, name: 'Product 2', price: 30.00, image: 'https://live.staticflickr.com/65535/53392691246_752b9ff7a4_b.jpg'},
+    {id: 3, name: 'Product 3', price: 15.00, image: 'http://live.staticflickr.com/2497/4178189729_eed2be9d38_b.jpg'},
+    {id: 4, name: 'Product 4', price: 10.00, image: 'https://live.staticflickr.com/65535/52539074934_70dd89a48c_b.jpg'}
   ];
   
   let cart = [];
