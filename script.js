@@ -8,74 +8,88 @@ const products = [
   ];
   
   let cart = [];
-  const taxRate = 0.10; // 10% tax rate
-  const shippingFee = 5.00; // Shipping cost
-  
-  // DOM elements
-  const cartItemsContainer = document.getElementById('cart-items');
-  const totalCostElement = document.getElementById('total-cost');
-  const taxElement = document.getElementById('tax');
-  const shippingElement = document.getElementById('shipping');
-  const totalWithTaxElement = document.getElementById('total-with-tax');
-  const checkoutButton = document.getElementById('checkout-btn');
-  const checkoutMessage = document.getElementById('checkout-message');
-  
-  // Function to update the cart UI
-  function updateCart() {
-    cartItemsContainer.innerHTML = ''; // Clear the cart display
-  
-    let totalCost = 0;
-    cart.forEach(item => {
-      const itemElement = document.createElement('div');
-      itemElement.textContent = `${item.name} - $${item.price}`;
-      cartItemsContainer.appendChild(itemElement);
-      totalCost += item.price;
-    });
-  
-    // Update total cost
-    totalCostElement.textContent = totalCost.toFixed(2);
-  
-    // Calculate tax and total with tax
-    const tax = totalCost * taxRate;
-    taxElement.textContent = tax.toFixed(2);
-  
-    // Calculate total with shipping and tax
-    const totalWithTax = totalCost + tax + shippingFee;
-    totalWithTaxElement.textContent = totalWithTax.toFixed(2);
+const taxRate = 0.10; // 10% tax rate
+const shippingFee = 5.00; // Shipping cost
+
+// DOM elements
+const cartItemsContainer = document.getElementById('cart-items');
+const totalCostElement = document.getElementById('total-cost');
+const taxElement = document.getElementById('tax');
+const shippingElement = document.getElementById('shipping');
+const totalWithTaxElement = document.getElementById('total-with-tax');
+const checkoutButton = document.getElementById('checkout-btn');
+const checkoutMessage = document.getElementById('checkout-message');
+
+// Function to update the cart UI
+function updateCart() {
+  cartItemsContainer.innerHTML = ''; // Clear the cart display
+
+  let totalCost = 0;
+  cart.forEach(item => {
+    const itemElement = document.createElement('div');
+    itemElement.textContent = `${item.name} - $${item.price}`;
+    cartItemsContainer.appendChild(itemElement);
+    totalCost += item.price;
+  });
+
+  // Update total cost
+  totalCostElement.textContent = totalCost.toFixed(2);
+
+  // Calculate tax and total with tax
+  const tax = totalCost * taxRate;
+  taxElement.textContent = tax.toFixed(2);
+
+  // Calculate total with shipping and tax
+  const totalWithTax = totalCost + tax + shippingFee;
+  totalWithTaxElement.textContent = totalWithTax.toFixed(2);
+}
+
+// Function to handle the "Add to Cart" / "Remove from Cart" toggle
+function toggleProductInCart(product, button) {
+  const productIndex = cart.findIndex(item => item.id === product.id);
+
+  if (productIndex === -1) {
+    // Product is not in the cart, so add it
+    cart.push(product);
+    button.textContent = 'Remove from Cart'; // Change button text to "Remove from Cart"
+  } else {
+    // Product is in the cart, so remove it
+    cart.splice(productIndex, 1);
+    button.textContent = 'Add to Cart'; // Change button text to "Add to Cart"
   }
-  
-  // Handle adding a product to the cart
-  document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', function () {
-      const productId = parseInt(this.parentElement.getAttribute('data-id'));
-      const product = products.find(p => p.id === productId);
-  
-      // Add product to the cart
-      cart.push(product);
-  
-      // Update cart display
-      updateCart();
-    });
+
+  // Update cart display
+  updateCart();
+}
+
+// Handle product button click (Add/Remove from Cart)
+document.querySelectorAll('.product button').forEach(button => {
+  button.addEventListener('click', function () {
+    const productId = parseInt(this.parentElement.getAttribute('data-id'));
+    const product = products.find(p => p.id === productId);
+
+    toggleProductInCart(product, this); // Toggle product in the cart
   });
-  
-  // Handle checkout
-  checkoutButton.addEventListener('click', function () {
-    if (cart.length === 0) {
-      checkoutMessage.textContent = 'Please add some items to your cart before checking out.';
-    } else {
-      // Calculate the total price
-      const totalCost = cart.reduce((sum, item) => sum + item.price, 0);
-      const tax = totalCost * taxRate;
-      const totalWithTax = totalCost + tax + shippingFee;
-  
-      // Display thank you message
-      checkoutMessage.textContent = `Thank you for your order! Your total was $${totalWithTax.toFixed(2)}.`;
-  
-      // Clear the cart
-      cart = [];
-      updateCart(); // Update the UI (reset the cart)
-    }
-  });
+});
+
+// Handle checkout
+checkoutButton.addEventListener('click', function () {
+  if (cart.length === 0) {
+    checkoutMessage.textContent = 'Please add some items to your cart before checking out.';
+  } else {
+    // Calculate the total price
+    const totalCost = cart.reduce((sum, item) => sum + item.price, 0);
+    const tax = totalCost * taxRate;
+    const totalWithTax = totalCost + tax + shippingFee;
+
+    // Display thank you message
+    checkoutMessage.textContent = `Thank you for your order! Your total was $${totalWithTax.toFixed(2)}.`;
+
+    // Clear the cart
+    cart = [];
+    updateCart(); // Update the UI (reset the cart)
+  }
+});
 //Product Section
 // document.addEventListener("DOMContentLoaded", function() {
    
