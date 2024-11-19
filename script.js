@@ -101,41 +101,127 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 //form Section
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting to handle validation
+  
+    // Clear any previous error messages
+    clearErrors();
+  
+    // Get form elements
+    const fName = document.getElementById("fName");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const message = document.getElementById("message");
+    const contactMethod = document.querySelector('input[name="contactMethod"]:checked');
     
-    const name = document.getElementById("fName").value;
-    const phone = document.getElementById("phone").value;
-    const email = document.getElementById("email").value;
-    const comments = document.getElementById("message").value;
-    const contactMethod = document.getElementById("prefPhone").value;
-    const contactMethod1 = document.getElementById("prefEmail").value;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^\d{10}$/;
-
-    let errors = [];
-    if (!emailRegex.test(email)) {
-        errors.push("Invalid email format.");
+    // Error message elements
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const phoneError = document.getElementById("phoneError");
+    const contactMethodError = document.getElementById("contactMethodError");
+    const messageError = document.getElementById("messageError");
+    const thankYouMessage = document.getElementById("thankYouMessage");
+  
+    let valid = true;
+    
+    // Validate Full Name (Required)
+    if (!fName.value.trim()) {
+      valid = false;
+      nameError.textContent = "Full name is required.";
     }
-    if (!phoneRegex.test(phone)) {
-        errors.push("Phone number must be 10 digits.");
+  
+    // Validate Email (Required and regex check)
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!email.value || !emailRegex.test(email.value)) {
+      valid = false;
+      emailError.textContent = "Please enter a valid email address.";
     }
-
-    if (errors.length > 0) {
-        document.getElementById("form-message").innerText = errors.join(", ");
-        return;
+  
+    // Validate Phone Number (Required and regex check)
+    const phoneRegex = /^[0-9]{10}$/; // Adjust regex for phone number as needed
+    if (!phone.value || !phoneRegex.test(phone.value)) {
+      valid = false;
+      phoneError.textContent = "Please enter a valid 10-digit phone number.";
     }
+  
+    // Validate Contact Method (Phone or Email)
+    if (!contactMethod) {
+      valid = false;
+      contactMethodError.textContent = "Please select a contact method (Phone or Email).";
+    }
+  
+    // Validate Message (Required)
+    if (!message.value.trim()) {
+      valid = false;
+      messageError.textContent = "Please enter your message.";
+    }
+  
+    // If form is valid, create customer object and show success message
+    if (valid) {
+      const customer = {
+        fullName: fName.value.trim(),
+        email: email.value,
+        phone: phone.value,
+        contactMethod: contactMethod.value,
+        message: message.value.trim()
+      };
+  
+      // Display success message
+      thankYouMessage.innerHTML = `
+        <h3>Thank you for your submission, ${customer.fullName}!</h3>
+        <p>We will contact you via: ${customer.contactMethod}</p>
+        <p>Your message: ${customer.message}</p>
+      `;
+  
+      // Reset the form
+      document.getElementById("contact-form").reset();
+    }
+  });
+  
+  // Function to clear previous error messages
+  function clearErrors() {
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("phoneError").textContent = "";
+    document.getElementById("contactMethodError").textContent = "";
+    document.getElementById("messageError").textContent = "";
+    document.getElementById("thankYouMessage").innerHTML = "";
+  }
+// document.getElementById("contact-form").addEventListener("submit", function(event) {
+//     event.preventDefault();
+    
+//     const name = document.getElementById("fName").value;
+//     const phone = document.getElementById("phone").value;
+//     const email = document.getElementById("email").value;
+//     const comments = document.getElementById("message").value;
+//     const contactMethod = document.getElementById("prefPhone").value;
+//     const contactMethod1 = document.getElementById("prefEmail").value;
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     const phoneRegex = /^\d{10}$/;
 
-    const customerInfo = { name, phone, email, comments, contactMethod, contactMethod1};
+//     let errors = [];
+//     if (!emailRegex.test(email)) {
+//         errors.push("Invalid email format.");
+//     }
+//     if (!phoneRegex.test(phone)) {
+//         errors.push("Phone number must be 10 digits.");
+//     }
+
+//     if (errors.length > 0) {
+//         document.getElementById("form-message").innerText = errors.join(", ");
+//         return;
+//     }
+
+//     const customerInfo = { name, phone, email, comments, contactMethod, contactMethod1};
        
-        document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod}.`;
-        this.reset();
+//         document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod}.`;
+//         this.reset();
         
-            document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod1}.`;
-        this.reset();
+//             document.getElementById("form-message").innerText = `Thank you, ${customerInfo.name}! We will contact you via ${customerInfo.contactMethod1}.`;
+//         this.reset();
         
     
-    });
+//     });
 
 document.getElementById('modeToggle').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the default anchor behavior
