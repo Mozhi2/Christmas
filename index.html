@@ -273,6 +273,45 @@
           alt="Letters To Santa ....">
       </div>
 
+      <form id="contact-form">
+        <div id="names">
+          <label for="fName">Full Name <span class="required">*</span></label>
+          <input type="text" id="fName" autocomplete="given-name" placeholder="Full Name" required>
+          <div id="nameError" class="error-message"></div>
+        </div>
+      
+        <div id="nums">
+          <label for="email">Email Address <span class="required">*</span></label>
+          <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" required>
+          <div id="emailError" class="error-message"></div>
+      
+          <label for="phone">Phone Number <span class="required">*</span></label>
+          <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Phone Number" required>
+          <div id="phoneError" class="error-message"></div>
+        </div>
+      
+        <label>Contact Method <span class="required">*</span></label>
+        <label for="prefPhone">
+          <input type="radio" id="prefPhone" name="contactMethod" value="Phone">
+          <span class="radio-label">Phone</span>
+        </label>
+        <label for="prefEmail">
+          <input type="radio" id="prefEmail" name="contactMethod" value="Email">
+          <span class="radio-label">Email</span>
+        </label>
+        <div id="contactMethodError" class="error-message"></div>
+      
+        <div id="comment">
+          <label for="message">Your Message:</label>
+          <textarea id="message" placeholder="Message" required></textarea>
+          <div id="messageError" class="error-message"></div>
+        </div>
+      
+        <input type="submit" name="submit" id="submit" value="Submit">
+      </form>
+      
+      <div id="thankYouMessage"></div>
+<!--
       <div>
         <h2>Contact Us</h2>
         <form id="contact-form">
@@ -306,7 +345,7 @@
             <span class="radio-label">Email</span>
           </label>
 
-          <!--
+          
           
           <label>
             <input type="radio" name="contact-method" value="phone" required> Phone
@@ -315,6 +354,7 @@
             <input type="radio" name="contact-method" value="email" required> Email
           </label>
         -->
+          <!--
           <div id="comment">
             <label for="email">Your Message:</label>
             <textarea id="message" placeholder="message" required></textarea>
@@ -325,7 +365,7 @@
 
         </form>
         <p id="form-message"></p>
-
+      -->
       </div>
     </section>
 </main>
