@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
     
-    const name = document.getElementById("full-name").value;
+    const name = document.getElementById("fName").value;
     const phone = document.getElementById("phone").value;
     const email = document.getElementById("email").value;
     const comments = document.getElementById("message").value;
