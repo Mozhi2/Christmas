@@ -454,12 +454,11 @@ footer a {
     h1 {
         font-size: 1.5rem;
     }
-
-    .logo {
-
-        align-items: left;
+/*
+    .logo{
+        align-items:left;
     }
-
+*/
     a#modeToggle{
         width: 100%;
     }
@@ -691,7 +690,7 @@ input{
     }
 
     header svg {
-        align-items: right;
+       
         justify-content: right;
     }
 
