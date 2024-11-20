@@ -237,11 +237,7 @@ a {
     background-color: var(--light-gray);
 }
 
-#product-display {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 
 /* Game Section */
 #game {
@@ -378,10 +374,14 @@ textarea {
 }
 */
 
+#products h2{
+    text-align: center;
+}
+
 #product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    justify-content: space-between;
+    gap: 0.5rem;
   }
   
   .product {
@@ -480,21 +480,9 @@ footer a {
         color: var(--white);
     }
 
-    #prev-product:hover,
-    #next-product:hover,
+   
     #submit-guess:hover,
     #submit:hover {
-        background-color: var(--purple);
-        color: var(--white);
-    }
-
-
-    .dark-mode #prev-product:hover {
-        background-color: var(--purple);
-        color: var(--white);
-    }
-
-    .dark-mode #prev-product:hover {
         background-color: var(--purple);
         color: var(--white);
     }
@@ -563,8 +551,10 @@ main {
     }
 
 
+    
 
-    /* Flex for smaller screens */
+
+    /* Product section 
     #product {
         display: flex;
         flex-wrap: wrap;
@@ -596,6 +586,8 @@ main {
         align-items: center;
         margin: 2rem
     }
+
+    */
 
     #contact {
         display: flex;
@@ -729,10 +721,12 @@ input{
         width: 70%;
     }
 
-    .product-card {
-       text-align: center;
-       align-items: center;
-    }
+    
+    #product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+      }
 
     
 }
@@ -762,11 +756,7 @@ input{
     }
 
 
-    .product-card {
-        text-align: center;
-        align-items: center;
-
-    }
+  
 
     
 
