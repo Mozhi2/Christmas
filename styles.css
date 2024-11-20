@@ -509,15 +509,17 @@ footer a {
     h1 {
         font-size: 1.5rem;
     }
+
+    a.logo{
+       width: 50%;
+       margin-left: 2rem;
+    }
+
+    #modeToggle{
+        width: 50%;
+        margin-left: 2rem;
+    }
 /*
-    .logo{
-        align-items:left;
-    }
-
-    a#modeToggle{
-        width: 100%;
-    }
-
     nav a {
         margin-top: 40px;
         justify-content: space-between;
@@ -647,18 +649,15 @@ main {
     }
 
     
-#prefPhone{
+input{
     display: grid;
-    /*
     align-items: center;
     margin-bottom: 10px;
-    align-items: center;
-*/
+ align-items: center;
+
 }
 
-#prefEmail{
-    display: grid;
-}
+
 
     #nums label {
         display: flex;
@@ -737,7 +736,10 @@ main {
     #santa img {
         width: 70%;
     }
-
+#products{
+    align-items: center;
+    justify-content: center;
+}
     
     #product-list {
         display: grid;
