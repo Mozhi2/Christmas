@@ -68,11 +68,7 @@ body {
 }
 
 
-/* Light/Drak mode SVG */
 
-.mode {
-    width: 30%;
-}
 
 /* light mode setting */
 
@@ -781,9 +777,7 @@ main {
         width: 100%;
     }
 
-input#prefPhone, input#prefEmail{
-    display: grid;
-}
+
   
     #product-list {
         display: grid;
