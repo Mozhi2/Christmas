@@ -421,6 +421,10 @@ textarea {
   #cart-summary p {
     font-size: 1.1em;
   }
+
+  #card-total{
+    background-color: var(--light-gray);
+  }
   
   #checkout-btn {
     background-color: #007bff;
@@ -642,15 +646,20 @@ main {
         margin-right: 1rem;
     }
 
-    /*
-input{
+    
+#prefPhone{
     display: grid;
+    /*
     align-items: center;
     margin-bottom: 10px;
     align-items: center;
-
-}
 */
+}
+
+#prefEmail{
+    display: grid;
+}
+
     #nums label {
         display: flex;
         margin-top: 8px;
