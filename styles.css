@@ -381,6 +381,7 @@ textarea {
 #product-list {
     display: grid;
     gap: 0.5rem;
+    justify-content: center;
   }
   
   .product {
@@ -548,9 +549,12 @@ main {
     #holidays p{
         margin: 1.5rem;
     }
-
+#product-list{
+    justify-content: center;
+}
 
     
+
 
 
     /* Product section 
@@ -698,6 +702,7 @@ input{
     #contact {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 
     #holidays p {
@@ -728,6 +733,7 @@ input{
     #product-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
         gap: 0.5rem;
       }
 
@@ -762,10 +768,13 @@ input{
         width: 100%;
     }
 
-
+input#prefPhone, input#prefEmail{
+    display: grid;
+}
   
     #product-list {
         display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 0.5rem;
       }
     
