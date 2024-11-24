@@ -524,6 +524,10 @@ footer a {
         width: 50%;
         margin-left: 2rem;
     }
+
+    #candle{
+        display: grid;
+    }
 /*
     nav a {
         margin-top: 40px;
