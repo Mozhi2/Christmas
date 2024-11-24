@@ -116,6 +116,10 @@ body.dark-mode {
     background-color: var(--black);
 }
 
+
+input[type="radio"] { margin-right: 0.5rem; } 
+
+
 /* Header */
 
 header {
