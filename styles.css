@@ -90,6 +90,11 @@ body.dark-mode {
     background-color: #444444;
 }
 
+.dark-mode #product-list{
+    background-color: var(--black);
+    color: var(--white);
+}
+
 .dark-mode nav a {
     background-color: #1a1a1a;
 

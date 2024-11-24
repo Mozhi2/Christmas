@@ -88,6 +88,11 @@ checkoutButton.addEventListener('click', function () {
     // Clear the cart
     cart = [];
     updateCart(); // Update the UI (reset the cart)
+
+    // After checkout, reset all buttons to "Add to Cart"
+    document.querySelectorAll('.product button').forEach(button => {
+      button.textContent = 'Add to Cart'; // Reset button text
+    });
   }
 });
 //Product Section
