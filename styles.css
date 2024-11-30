@@ -432,7 +432,7 @@ textarea {
   }
 
   #cart-total{
-    background-color: var(--light-gray);
+    background-color: var(--black);
   }
   
   #checkout-btn {
