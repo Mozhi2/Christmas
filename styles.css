@@ -604,9 +604,15 @@ footer a {
         margin-right: 1rem;
     }
 
+    input#prefPhone{
+        display: flex;
+    }
+    input#prefEmail{
+        display: flex;
+    }
     
 input{
-   
+  
     align-items: center;
     margin-bottom: 10px;
  align-items: center;
