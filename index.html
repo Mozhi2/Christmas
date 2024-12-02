@@ -334,16 +334,17 @@
           <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Phone Number" required>
           <div id="phoneError" class="error-message"></div>
         </div>
+
+
+          
       
         <label>Contact Method <span class="required">*</span></label>
-        <label for="prefPhone">
-          <input type="radio" id="prefPhone" name="contactMethod" value="Phone">
-          <span class="radio-label">Phone</span>
+        <label>
+          <input type="radio" name="contactMethod" value="Phone" required>Phone</label>
+        <label>
+          <label> <input type="radio" name="contactMethod" value="Email" required>Email</label>
         </label>
-        <label for="prefEmail">
-          <input type="radio" id="prefEmail" name="contactMethod" value="Email">
-          <span class="radio-label">Email</span>
-        </label>
+        
         <div id="contactMethodError" class="error-message"></div>
       
         <div id="comment">
