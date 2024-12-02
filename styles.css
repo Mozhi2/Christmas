@@ -606,10 +606,10 @@ footer a {
     }
 
     #prefPhone input{
-        display: flex;
+        display: grid;
     }
     #prefEmail input{
-        display: flex;
+        display: grid;
     }
     
 input{
