@@ -522,39 +522,17 @@ footer a {
 
     a.logo{
        width: 100%;
-       margin-left: 2rem;
+       
     }
 
     #modeToggle{
         width: 100%;
-        margin-left: 2rem;
+        
     }
 
     #candle{
         display: grid;
     }
-/*
-    nav a {
-        margin-top: 40px;
-        justify-content: space-between;
-        margin-top: -20px;
-        text-decoration: none;
-        align-items: center;
-        text-align: center;
-        padding: 0.5rem;
-        margin: 0.5rem 0;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 0.25rem;
-    }
-
-
-
-    /* Main content styles 
-main {
-    margin-top: 30px;
-}
-*/
 
     /* Section style */
 
@@ -572,45 +550,6 @@ main {
 #product-list{
     justify-content: center;
 }
-
-    
-
-
-
-    /* Product section 
-    #product {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-top: 0.5rem;
-        background-color: var(--light-gray);
-    }
-
-
-    #product-display {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    section #product div {
-        flex: 1;
-        min-width: 200px;
-    }
-
-    .product-card {
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        text-align: center;
-        align-items: center;
-        margin: 2rem
-    }
-
-    */
 
     #contact {
         display: flex;
