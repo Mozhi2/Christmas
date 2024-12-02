@@ -750,6 +750,14 @@ input{
         gap: 0.5rem;
       }
     
+      label {
+        display: block; /* Makes each label take up its own line */
+        margin-bottom: 10px; /* Optional: adds space between labels */
+      }
+      
+      input[type="radio"] {
+        margin-right: 10px; /* Optional: adds space between the radio button and the label text */
+      }
 
      #submit {
         width: 50%;
