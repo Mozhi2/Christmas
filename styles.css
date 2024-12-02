@@ -431,8 +431,9 @@ textarea {
     font-size: 1.1em;
   }
 
-  #cart-total{
+  .dark-mode #cart-total{
     background-color: var(--black);
+    color: var(--white);
   }
   
   #checkout-btn {
