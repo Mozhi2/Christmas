@@ -600,18 +600,8 @@ footer a {
     .radio-label{
         font-weight: normal;
         margin: 10px;
-        text-align: center;
-        display: grid;
-        margin-right: 1rem;
-    }
+        }
 
-    #prefPhone input{
-        display: grid;
-    }
-    #prefEmail input{
-        display: grid;
-    }
-    
 input{
   
     align-items: center;
@@ -751,12 +741,12 @@ input{
       }
     
       label {
-        display: block; /* Makes each label take up its own line */
-        margin-bottom: 10px; /* Optional: adds space between labels */
+        display: block; 
+        margin-bottom: 10px; 
       }
       
       input[type="radio"] {
-        margin-right: 10px; /* Optional: adds space between the radio button and the label text */
+        margin-right: 10px; 
       }
 
      #submit {
