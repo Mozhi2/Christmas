@@ -316,6 +316,7 @@ a {
     width: 100%;
 }
 */
+/*
 .radio-input {
     font-family: system-ui, sans-serif;
     font-size: 2rem;
@@ -604,10 +605,10 @@ footer a {
         margin-right: 1rem;
     }
 
-    input#prefPhone{
+    #prefPhone input{
         display: flex;
     }
-    input#prefEmail{
+    #prefEmail input{
         display: flex;
     }
     
