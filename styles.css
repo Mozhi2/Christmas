@@ -727,11 +727,13 @@ label {
     a.logo{
         justify-content: center;
         align-items: center;
+        margin-right: 2rem;
     }
 
     #modeToggle{
         justify-content: center;
         align-items: center;
+        margin-right: 2rem;
     }
     h1{
         font-size: 2.25rem;
