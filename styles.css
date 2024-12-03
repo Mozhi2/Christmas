@@ -299,10 +299,6 @@ a {
     text-align: left;
 }
 
-#message{
-width: 100%;
-}
-
 #names input{
     width: 70%;
 }
@@ -623,6 +619,12 @@ label {
         display: flex;
         margin-top: 8px;
     }
+
+    
+#message{
+    width: 100%;
+    }
+    
 
     #submit {
         margin-top: 1rem;
