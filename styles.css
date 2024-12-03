@@ -621,7 +621,7 @@ label {
 
     
 #message{
-    width: 70%;
+    width: 100%;
     }
     
 
@@ -776,6 +776,10 @@ label {
       
       input[type="radio"] {
         margin-right: 10px; 
+      }
+
+      #thankYouMessage{
+        margin-right: 1rem;
       }
 
      #submit {
