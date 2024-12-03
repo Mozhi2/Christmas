@@ -246,12 +246,6 @@ a {
     background-color: var(--light-gray);
 }
 
-#thankYouMessage{
-    align-items: center;
-    text-align: center;
-}
-
-
 
 /* Game Section */
 #game {
