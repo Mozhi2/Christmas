@@ -299,6 +299,9 @@ a {
     text-align: left;
 }
 
+#message{
+width: 100%;
+}
 
 #names input{
     width: 70%;
@@ -605,6 +608,16 @@ input{
 }
 
 
+label {
+    display: block; 
+    margin-bottom: 10px; 
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px; 
+  }
+
+
 
     #nums label {
         display: flex;
@@ -695,6 +708,14 @@ input{
         gap: 0.5rem;
       }
 
+      label {
+        display: block; 
+        margin-bottom: 10px; 
+      }
+      
+      input[type="radio"] {
+        margin-right: 10px; 
+      }
     
 }
 
