@@ -882,7 +882,7 @@ label {
     #santa img {
         width: 70%;
     }
-    section#products{
+#products{
     align-items: center;
     justify-content: center;
 }
@@ -892,6 +892,7 @@ label {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         gap: 0.5rem;
+        justify-items: center;
       }
 
       label {
