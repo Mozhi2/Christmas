@@ -882,7 +882,7 @@ label {
     #santa img {
         width: 70%;
     }
-#products{
+    section#products{
     align-items: center;
     justify-content: center;
 }
