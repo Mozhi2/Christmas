@@ -311,22 +311,7 @@ header {
     align-items: center;
 
 }
-/*
-a.logo{
-    margin-left: 2rem;
-}
-*/
-/*
-#modeToggle{
-    margin-left: 2rem;
-}
 
-/*
-  header div{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-    */
 header svg {
     fill: var(--white);
     width: 100%;
@@ -356,11 +341,7 @@ h2 {
 
 
 /* ----- LINK STYLES ----- */
-/*
-  nav{
-    margin-left: 5rem;
-  }
-  */
+
 nav a {
     text-decoration: none;
     text-align: center;
@@ -396,16 +377,7 @@ a {
 }
 
 
-/* Holidays section */
-/*
-  #holidays{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1.5rem;
-     justify-content: center;
-    align-items: center;
-  }
-    */
+
 #holidays p {
     line-height: 2rem;
     margin: 0 auto;
@@ -483,83 +455,21 @@ a {
 #names input{
     width: 70%;
 }
-/*
-#prefPhone input{
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-}
-*/
-/*
-.radio-input {
-    font-family: system-ui, sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.1;
-    display: flex;
-    gap: 0.5em;
-}
-/*
-#prefPhone, #prefEmail{
-    display: grid;
-}
-    */
+
 #santa {
     margin: 6rem auto;
 }
 
-/*
-  #prev-product, #next-product{
-    text-decoration:none;
-    text-align: center;
-    padding: 0.5rem;
-    margin: 0.7rem 0;
-    background-color: var(--white);
-    color: var(--purple);
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 0.5rem;
-  }
-  */
 
-/* PRODUCT STYLE 
-
-#product-display {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+a.logo{
+    margin-left: 2rem;
+   
 }
 
-.product-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    margin: 2rem
+#modeToggle{
+    margin-left: 2rem;
+   
 }
-
-#cart-items {
-    list-style-type: none;
-    padding: 0;
-}
-
-#cart-items li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#cart-items img {
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-}
-
-#cart-total {
-    margin-top: 20px;
-    font-weight: bold;
-}
-*/
 
 #products h2{
     text-align: center;
@@ -896,7 +806,7 @@ label {
       }
 
       label {
-        display: block; 
+        display: block;
         margin-bottom: 10px; 
       }
       
@@ -912,14 +822,16 @@ label {
     a.logo{
         justify-content: center;
         align-items: center;
-        margin-right: 2rem;
+       
     }
 
     #modeToggle{
         justify-content: center;
         align-items: center;
-        margin-right: 2rem;
+       
     }
+
+
     h1{
         font-size: 2.25rem;
     }
