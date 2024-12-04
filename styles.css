@@ -146,6 +146,7 @@ table {
     --teal: #55BCD5;
     --blue: #499BD2;
     --light-blue: #5959a9;
+    --med-blue: #007bff;
     --dark-gray: #222222;
     --light-gray: #EAEAEA;
     --white: #FFFFFF;
@@ -517,6 +518,7 @@ a.logo{
   
   #cart-summary p {
     font-size: 1.1em;
+    padding: 0.5rem;
   }
 
   .dark-mode #cart-total{
@@ -525,7 +527,7 @@ a.logo{
   }
   
   #checkout-btn {
-    background-color: #007bff;
+    background-color: var(--med-blue);
     color: white;
     border: none;
     padding: 10px 20px;
