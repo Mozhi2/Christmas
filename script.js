@@ -1,3 +1,4 @@
+// Author: Zahra Janforooz
 "use strict";
 const body = document.body;
 const products = [
